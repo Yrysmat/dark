@@ -1,0 +1,33 @@
+@import './mixin/var';
+@import './mixin/fonts';
+@import './mixin/mixin';
+@import './component/header';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+body{
+    color: #eee;
+    background: #fff;
+    &.dark-theme{
+        color: #eee;
+        background: #121212;
+    }&.dark-theme a{
+        color: #eee;
+    }
+}

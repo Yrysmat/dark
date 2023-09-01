@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    width: 700px;
+  }
+  &__btn {
+    border: none;
+    background: #1100fc;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  &__button {
+    margin-left: 20px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    &-sun {
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+    &-moon  {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__link{
+    margin: 0 20px;
+  }
+}
+
+.sun {
+  display: block;
+}
+
+.moon {
+  display:none;
+}
